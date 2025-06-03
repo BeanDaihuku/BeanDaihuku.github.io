@@ -2,13 +2,13 @@ body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d5cfcd; /* ベース背景色 */
-  color: #2e2f31; /* メイン文字色 */
+  background-color: #fdfdfd;
+  color: #333;
 }
 
 header {
-  background-color: #2e2f31;
-  color: #d5cfcd;
+  background-color: #222;
+  color: white;
   padding: 1rem 2rem;
 }
 
@@ -28,37 +28,35 @@ main.button-container {
 /* ボタンスタイル */
 a.btn_09 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  color: #2e2f31;
-  text-align: left;
+  color: #795548;
+  text-align: center;
   text-decoration: none;
   width: 100%;
   height: 100px;
-  padding: 20px;
+  padding: 20px 20px 20px 75px;
   background-color: #ffffff;
-  border: 5px solid #6c6150;
+  border: 5px solid #FFC107;
   border-radius: 10px;
   box-sizing: border-box;
   position: relative;
-  gap: 20px;
   transition-duration: 0.3s;
 }
 
-a.btn_09:hover {
-  color: #ffffff;
-  background-color: #9e927e;
-}
-
-/* 画像アイコン */
-.btn-icon {
+a.btn_09::before {
+  content: '';
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -30px;
+  background-image: url("https://125naroom.com/wp/wp-content/themes/design125naroom/img/kinoko_pan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-/* テキスト部分 */
 a.btn_09 span {
   font-size: 26px;
   font-weight: bold;
@@ -69,21 +67,39 @@ a.btn_09 span span {
   display: block;
   font-size: 16px;
   margin-bottom: 7px;
-  color: #74736f;
+}
+
+a.btn_09:hover {
+  color: #ffffff;
+  background-color: #FFC107;
+}
+
+/* フッター */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 /* === レスポンシブ対応 === */
 @media (max-width: 768px) {
+  main.button-container {
+    padding: 1rem;
+  }
+
   a.btn_09 {
     height: auto;
     flex-direction: row;
-    padding: 15px;
-    gap: 15px;
+    padding: 20px 20px 20px 70px;
   }
 
-  .btn-icon {
+  a.btn_09::before {
     width: 50px;
     height: 50px;
+    margin-top: -25px;
+    left: 15px;
   }
 
   a.btn_09 span {
