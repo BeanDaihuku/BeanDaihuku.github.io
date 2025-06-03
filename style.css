@@ -28,32 +28,37 @@ main.button-container {
 /* ボタンスタイル */
 a.btn_09 {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   color: #2e2f31;
+  text-align: left;
   text-decoration: none;
   width: 100%;
   height: 100px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   background-color: #ffffff;
   border: 5px solid #6c6150;
   border-radius: 10px;
   box-sizing: border-box;
+  position: relative;
+  gap: 20px;
   transition-duration: 0.3s;
-  gap: 20px; /* アイコンとテキストの間隔 */
 }
 
-a.btn_09::before {
-  content: '';
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  background-image: url("アイコン画像のURLをここに"); /* ここを差し替え */
-  background-size: cover;
-  background-position: center;
+a.btn_09:hover {
+  color: #ffffff;
+  background-color: #9e927e;
+}
+
+/* 画像アイコン */
+.btn-icon {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  display: block;
+  object-fit: cover;
 }
 
+/* テキスト部分 */
 a.btn_09 span {
   font-size: 26px;
   font-weight: bold;
@@ -67,12 +72,6 @@ a.btn_09 span span {
   color: #74736f;
 }
 
-a.btn_09:hover {
-  color: #ffffff;
-  background-color: #9e927e;
-}
-
-
 /* === レスポンシブ対応 === */
 @media (max-width: 768px) {
   a.btn_09 {
@@ -82,9 +81,9 @@ a.btn_09:hover {
     gap: 15px;
   }
 
-  a.btn_09::before {
-    width: 40px;
-    height: 40px;
+  .btn-icon {
+    width: 50px;
+    height: 50px;
   }
 
   a.btn_09 span {
