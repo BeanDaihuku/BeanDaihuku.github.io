@@ -42,7 +42,7 @@ header .headers a {
 header .headers a:hover {
   background-color: white;
 }
-header .belonging {
+header .about {
   background-color: white;
 }
 
@@ -54,12 +54,12 @@ body {
   position: relative;
   margin: 0 auto;
 }
-.main .belonging-container {
+.main .about-container {
   margin: 10px 40px 20px 40px;
   background-color: #f6f6f6;
   padding: 20px 40px;
 }
-.main .belonging-container .title {
+.main .about-container .title {
   font-size: 50px;
   margin: 0px;
   padding-bottom: 10px;
