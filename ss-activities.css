@@ -45,7 +45,7 @@ header .headers a {
 header .headers a:hover {
   background-color: white;
 }
-header .activity {
+header .activities {
   background-color: white;
 }
 
@@ -110,4 +110,4 @@ main {
   .accordion-button .title-co p {
     padding-left: 5%;
   }
-}/*# sourceMappingURL=ss-activity.css.map */
+}
