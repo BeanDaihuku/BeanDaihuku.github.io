@@ -67,26 +67,6 @@ body {
 
 /* 画面幅が例えば 768px 以下の場合に適用 */
 @media all and (max-width: 768px) {
-  header {
-    height: auto; /* 高さを自動調整 */
-  }
-
-  header .headers {
-    width: 100%; /* 幅を100%にして縦に並べる */
-    float: none; /* floatを解除 */
-    display: block; /* table-cell から block に変更 */
-  }
-
-  header .headers a {
-    display: block; /* block に変更して幅を占有 */
-    padding: 10px 0; /* 上下パディングを追加してクリックしやすく */
-    line-height: normal; /* 行の高さもリセット */
-    height: auto; /* 高さを自動調整 */
-  }
-}
-
-/* 画面幅が例えば 768px 以下の場合に適用 */
-@media all and (max-width: 768px) {
   .main .about-container {
     margin: 10px 15px 20px 15px; /* 左右のマージンを小さく */
     padding: 15px; /* パディングも小さく */
