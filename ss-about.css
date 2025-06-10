@@ -67,6 +67,37 @@ body {
 
 /* 画面幅が例えば 768px 以下の場合に適用 */
 @media all and (max-width: 768px) {
+  header {
+    height: 60px; /* ヘッダーの高さを維持 */
+  }
+
+  header .headers {
+    width: 25%; /* 各ヘッダーの幅を維持して横展開 */
+    /* float: left; は既存なので不要 */
+    /* display: table; も既存なので不要 */
+  }
+
+  header .headers a {
+    font-size: 14px; /* フォントサイズを小さくして収まりやすく */
+    /* line-height, display, vertical-align は既存のままでOK */
+    padding: 0 5px; /* 左右のパディングを調整してテキスト間のスペースを確保 */
+  }
+}
+
+/* さらに小さな画面（例えば 480px 以下）向けの調整 */
+@media all and (max-width: 480px) {
+  header {
+    height: 50px; /* ヘッダーをさらに少し狭くする */
+  }
+
+  header .headers a {
+    font-size: 12px; /* フォントサイズをさらに小さく */
+    padding: 0 2px; /* 左右のパディングをさらに詰める */
+  }
+}
+
+/* 画面幅が例えば 768px 以下の場合に適用 */
+@media all and (max-width: 768px) {
   .main .about-container {
     margin: 10px 15px 20px 15px; /* 左右のマージンを小さく */
     padding: 15px; /* パディングも小さく */
