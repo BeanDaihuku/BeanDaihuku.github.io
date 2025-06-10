@@ -64,3 +64,30 @@ body {
   margin: 0px;
   padding-bottom: 10px;
 }
+
+/* ss-about.css の既存のスタイルに追記 */
+
+/* 画面幅が例えば 768px 以下の場合に適用 */
+@media all and (max-width: 768px) {
+  .main .about-container {
+    margin: 10px 15px 20px 15px; /* 左右のマージンを小さく */
+    padding: 15px; /* パディングも小さく */
+  }
+
+  .main .about-container .title {
+    font-size: 36px; /* フォントサイズを小さく */
+    padding-bottom: 5px; /* パディングも調整 */
+  }
+}
+
+/* さらに小さな画面（例: 480px以下）向けの調整 */
+@media all and (max-width: 480px) {
+  .main .about-container {
+    margin: 10px 10px 15px 10px; /* さらにマージンを詰める */
+    padding: 10px; /* さらにパディングを詰める */
+  }
+
+  .main .about-container .title {
+    font-size: 28px; /* さらにフォントサイズを小さく */
+  }
+}
